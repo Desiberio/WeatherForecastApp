@@ -1,0 +1,44 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net48</TargetFramework>
+    <TargetPlatformVersion>10.0</TargetPlatformVersion>
+    <UseWPF>true</UseWPF>
+    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
+    <UserSecretsId>87a6d89d-fb12-4a39-aec7-b4a7cacc91d0</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="SearchIcon.svg" />
+    <None Remove="TrayIcon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\.editorconfig" Link=".editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DotNetProjects.SVGImage" Version="4.1.108" />
+    <PackageReference Include="Hardcodet.NotifyIcon.Wpf" Version="1.1.0" />
+    <PackageReference Include="LiveCharts.Wpf" Version="0.9.7" />
+    <PackageReference Include="Microsoft.Toolkit.Uwp.Notifications" Version="7.1.3" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+    <PackageReference Include="ReactiveUI" Version="18.4.22" />
+    <PackageReference Include="ReactiveUI.WPF" Version="18.4.22" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WeatherForecastAPI\WeatherForecastBackend.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Configuration" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="SearchIcon.svg" />
+    <Resource Include="TrayIcon.ico" />
+  </ItemGroup>
+
+</Project>
